@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default</title>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        background-color: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      "
+    >
+      <img src="/assets/logo.png" alt="inilogo" style="height: 50px" />
+      <a
+        href="#"
+        style="
+          background-color: royalblue;
+          color: seashell;
+          padding: 10px;
+          border-radius: 10px;
+          text-decoration: none;
+        "
+        >Login</a
+      >
+    </div>
+
+    <section
+      style="
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+      "
+    >
+      <div style="display: flex; justify-content: center">
+        <img src="/assets/image.jpg" style="width: 400px" alt="gambar" />
+      </div>
+      <div>
+        <h1 style="font-family: Arial, Helvetica, sans-serif">
+          Buat Account Baru!
+        </h1>
+        <h2 style="font-family: Arial, Helvetica, sans-serif">Sign Up Form</h2>
+
+        <div style="display: flex">
+          <div>
+            <p style="font-weight: bold">Nama Depan</p>
+            <input type="text" placeholder="isi nama depan" />
+          </div>
+          <div>
+            <p style="font-weight: bold">Nama Belakang</p>
+            <input type="text" placeholder="Isi nama belakang" />
+          </div>
+        </div>
+        <p style="font-weight: bold">Gender:</p>
+        <input type="radio" id="male" name="Gender" value="Male" />
+        <label for="Gender">Male</label><br />
+        <input type="radio" id="female" name="Gender" value="Female" />
+        <label for="Gender">Female</label><br />
+        <input type="radio" id="other" name="Gender" value="Other" />
+        <label for="Gender">Other</label><br />
+
+        <p style="font-weight: bold">Nationality</p>
+        <select name="nationality">
+          <option value="indonesian">Indonesia</option>
+          <option value="uganda">Uganda</option>
+          <option value="hungaria">Hungaria</option>
+          <option value="bekasi">Bekasi</option>
+        </select>
+
+        <p style="font-weight: bold">Language Spoken</p>
+        <input type="checkbox" id="bahasa1" name="bahasa1" value="indo" />
+        <label for="bahasa1"> Bahasa Indonesia</label><br />
+        <input type="checkbox" id="bahasa2" name="bahasa2" value="inggris" />
+        <label for="bahasa2"> English </label><br />
+        <input type="checkbox" id="bahasa3" name="bahasa3" value="other" />
+        <label for="bahasa3"> Other</label>
+        <p style="font-weight: bold">Bio:</p>
+
+        <textarea name="Bio"></textarea><br />
+        <button
+          style="
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+          "
+        >
+          Sign Up
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
